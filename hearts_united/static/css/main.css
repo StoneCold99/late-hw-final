@@ -1,0 +1,13 @@
+/* Shop Page CSS */
+
+
+.shop-header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jpz8eU1IgK693mqMkvupXSuRUOGZV-fslg&usqp=CAU");
+    background-size: cover;
+    height: 700px;
+    color: black; 
+}
+
+.shop-stats {
+    color: black; 
+}
