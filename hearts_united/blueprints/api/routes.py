@@ -32,7 +32,7 @@ def token():
 def get_shop():
     allprods = Product.query.all()
     print(allprods)
-    response = product_schema.dump(allprods)
+    response = products_schema.dump(allprods)
     print(response)
     return jsonify(response)
 
