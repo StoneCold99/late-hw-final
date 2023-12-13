@@ -30,9 +30,10 @@ def token():
 @api.route('/shop')
 @jwt_required()
 def get_shop():
-        allprods = Product.query.all()
-        response = product_schema.dump(allprods)
-        return jsonify(response)
+    allprods = Product.query.all()
+    response = product_schema.dump(allprods)
+    print(response)
+    return jsonify(response)
 
 @api.route('/order/<cust_id>', methods = ['POST']) #CREATE is usually paired with a POST method 
 @jwt_required()

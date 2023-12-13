@@ -79,7 +79,7 @@ class Product(db.Model): #db.Model helps us translate python code to columns in 
     date_added = db.Column(db.DateTime, default = datetime.utcnow)
     #eventually we need to connect this to orders 
 
-    def __init__(self, name, price, quantity, image="", image2="", image3="", image4="", description=""):
+    def __init__(self, name, price, quantity, image="", description=""):
         self.prod_id = self.set_id()
         self.name = name
         self.image = self.set_image(image, name)
